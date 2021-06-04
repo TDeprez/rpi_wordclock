@@ -55,6 +55,8 @@ class wiring:
             self.wcl = micro_net_wiring(self.WCA_WIDTH, self.WCA_HEIGHT)
         elif wiring_layout == 'webdisaster_wiring':
             self.wcl = webdisaster_wiring(self.WCA_WIDTH, self.WCA_HEIGHT)
+        elif wiring_layout == 'my_wiring':
+            self.wcl = my_wiring(self.WCA_WIDTH, self.WCA_HEIGHT)            
         else:
             print('Warning: No valid wiring layout found. Falling back to default!')
             self.wcl = bernds_wiring(self.WCA_WIDTH, self.WCA_HEIGHT)
